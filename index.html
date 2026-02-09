@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Student Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="bg"></div>
+  <header class="nav">
+    <a class="logo" href="#top">YN</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact" class="pill">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top" class="container">
+    <section class="hero reveal">
+      <p class="badge">Girls Who Code • Portfolio Build</p>
+      <h1>
+        Hi, I’m <span class="gradient">Your Name</span> 👋
+      </h1>
+      <p class="subtitle">
+        I build clean, useful things — websites, apps, and little tools that solve real problems.
+      </p>
+
+      <div class="cta">
+        <a class="btn" href="#projects">See Projects</a>
+        <button class="btn ghost" id="copyEmail">Copy Email</button>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <p class="big">3</p>
+          <p class="small">Projects</p>
+        </div>
+        <div class="stat">
+          <p class="big">2</p>
+          <p class="small">Clubs</p>
+        </div>
+        <div class="stat">
+          <p class="big">∞</p>
+          <p class="small">Curiosity</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="card reveal">
+      <h2>About</h2>
+      <p>
+        I’m a student interested in software, AI, and building things that make life easier.
+        This site is my “resume, but cooler.”
+      </p>
+      <p class="muted">
+        Edit this section to match you: goals, interests, and what you’re proud of.
+      </p>
+    </section>
+
+    <section id="skills" class="card reveal">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span class="chip">HTML</span>
+        <span class="chip">CSS</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">Python</span>
+        <span class="chip">UI Design</span>
+        <span class="chip">Problem Solving</span>
+      </div>
+      <p class="muted tiny">Tip: add your own skills or swap these out.</p>
+    </section>
+
+    <section id="projects" class="reveal">
+      <div class="sectionTitle">
+        <h2>Projects</h2>
+        <p class="muted">Hover over cards. Click to learn more.</p>
+      </div>
+
+      <div class="grid">
+        <a class="project" href="#" onclick="return false;">
+          <div class="projectTop">
+            <span class="tag">Web</span>
+            <span class="tag glow">New</span>
+          </div>
+          <h3>Study Planner</h3>
+          <p>A simple planner that turns assignments into a weekly checklist.</p>
+          <ul>
+            <li>Clean layout</li>
+            <li>Mobile-friendly</li>
+            <li>Future: reminders</li>
+          </ul>
+        </a>
+
+        <a class="project" href="#" onclick="return false;">
+          <div class="projectTop">
+            <span class="tag">JS</span>
+            <span class="tag glow">Fun</span>
+          </div>
+          <h3>Mini Clicker Game</h3>
+          <p>Click, earn points, buy upgrades, beat your high score.</p>
+          <ul>
+            <li>Keyboard shortcuts</li>
+            <li>Animations</li>
+            <li>Local high score</li>
+          </ul>
+        </a>
+
+        <a class="project" href="#" onclick="return false;">
+          <div class="projectTop">
+            <span class="tag">AI</span>
+            <span class="tag glow">Idea</span>
+          </div>
+          <h3>Hype Message Generator</h3>
+          <p>Type your interests → get a custom hype message (no API required).</p>
+          <ul>
+            <li>Template “AI”</li>
+            <li>Share button</li>
+            <li>Multiple tones</li>
+          </ul>
+        </a>
+      </div>
+    </section>
+
+    <section id="experience" class="card reveal">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="item">
+          <p class="when">2026 — Present</p>
+          <div>
+            <p class="title">Member, Girls Who Code</p>
+            <p class="muted">Building projects, learning web dev, and collaborating with others.</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <p class="when">2025 — 2026</p>
+          <div>
+            <p class="title">Student / Volunteer</p>
+            <p class="muted">Add tutoring, club roles, competitions, or anything you’re proud of.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="card reveal">
+      <h2>Contact</h2>
+      <p class="muted">Make this real: add your email + links.</p>
+
+      <div class="contactRow">
+        <div class="contactBox">
+          <p class="label">Email</p>
+          <p class="value" id="emailText">yourname@email.com</p>
+        </div>
+        <div class="contactBox">
+          <p class="label">Links</p>
+          <p class="value">
+            <a href="#" onclick="return false;">GitHub</a> •
+            <a href="#" onclick="return false;">LinkedIn</a> •
+            <a href="#" onclick="return false;">Portfolio</a>
+          </p>
+        </div>
+      </div>
+
+      <p class="toast" id="toast" aria-live="polite"></p>
+    </section>
+
+    <footer class="footer">
+      <p>Made with ❤️ at Girls Who Code</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
